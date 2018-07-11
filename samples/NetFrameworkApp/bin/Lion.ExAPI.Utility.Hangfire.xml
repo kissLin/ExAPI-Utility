@@ -1,0 +1,267 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Lion.ExAPI.Utility.Hangfire</name>
+    </assembly>
+    <members>
+        <member name="T:Lion.ExAPI.Utility.Hangfire.Models.V2.ResponseBase`1">
+            <summary>
+            [過期,請改用 ResponseBase]
+            </summary>
+            <typeparam name="T"></typeparam>
+        </member>
+        <member name="P:Lion.ExAPI.Utility.Hangfire.Models.V2.ResponseBase`1.Data">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Lion.ExAPI.Utility.Hangfire.Models.V2.ResponseBase`1.rDesc">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Lion.ExAPI.Utility.Hangfire.Models.V2.ResponseBase`1.rCode">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Lion.ExAPI.Utility.Hangfire.Models.V2.ResponseBase`1.TokenExpires">
+            <summary>
+            Token 到期時間
+            </summary>
+        </member>
+        <member name="T:Lion.ExAPI.Utility.Hangfire.Models.V2.ResponseBase">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:Lion.ExAPI.Utility.Hangfire.HttpErrorCodeEnum">
+            <summary>
+            判斷 http code Status
+            </summary>
+        </member>
+        <member name="F:Lion.ExAPI.Utility.Hangfire.HttpErrorCodeEnum.none">
+            <summary>Enum初始值</summary> 
+        </member>
+        <member name="F:Lion.ExAPI.Utility.Hangfire.HttpErrorCodeEnum.OK">
+            <summary>
+            200,。
+            </summary>
+        </member>
+        <member name="F:Lion.ExAPI.Utility.Hangfire.HttpErrorCodeEnum.Bad_Request">
+            <summary>
+            400，由於包含語法錯誤，當前請求無法被伺服器理解。除非進行修改，否則用戶端不應該重複提交這個請求。
+            </summary>
+        </member>
+        <member name="F:Lion.ExAPI.Utility.Hangfire.HttpErrorCodeEnum.Unauthorized">
+            <summary>
+            401,當前請求需要用戶驗證。
+            </summary>
+        </member>
+        <member name="F:Lion.ExAPI.Utility.Hangfire.HttpErrorCodeEnum.Payment_Required">
+            <summary>
+            402,該狀態碼是為了將來可能的需求而預留的。
+            </summary>
+        </member>
+        <member name="F:Lion.ExAPI.Utility.Hangfire.HttpErrorCodeEnum.Forbidden">
+            <summary>
+            403,伺服器已經理解請求，但是拒絕執行它。
+            </summary>
+        </member>
+        <member name="F:Lion.ExAPI.Utility.Hangfire.HttpErrorCodeEnum.Not_Found">
+            <summary>
+            404,請求失敗，請求所希望得到的資源未被在伺服器上發現。
+            </summary>
+        </member>
+        <member name="F:Lion.ExAPI.Utility.Hangfire.HttpErrorCodeEnum.Method_Not_Allowed">
+            <summary>
+            405,請求行中指定的請求方法不能被用於請求相應的資源。
+            </summary>
+        </member>
+        <member name="F:Lion.ExAPI.Utility.Hangfire.HttpErrorCodeEnum.Request_Timeout">
+            <summary>
+            408,請求超時。用戶端沒有在伺服器預備等待的時間內完成一個請求的傳送。
+            </summary>
+        </member>
+        <member name="F:Lion.ExAPI.Utility.Hangfire.HttpErrorCodeEnum.Unsupported_Media_Type">
+            <summary>
+            415,對於當前請求的方法和所請求的資源，請求中提交的實體並不是伺服器中所支援的格式，因此請求被拒絕。
+            </summary>
+        </member>
+        <member name="F:Lion.ExAPI.Utility.Hangfire.HttpErrorCodeEnum.Internal_Server_Error">
+            <summary>
+            500,伺服器遇到了一個未曾預料的狀況，導致了它無法完成對請求的處理。一般來說，這個問題都會在伺服器的程式碼出錯時出現。
+            </summary>
+        </member>
+        <member name="F:Lion.ExAPI.Utility.Hangfire.HttpErrorCodeEnum.Bad_Gateway">
+            <summary>
+            502,作為閘道器或者代理工作的伺服器嘗試執行請求時，從上游伺服器接收到無效的回應。
+            </summary>
+        </member>
+        <member name="F:Lion.ExAPI.Utility.Hangfire.HttpErrorCodeEnum.Service_Unavailable">
+            <summary>
+            503,由於臨時的伺服器維護或者過載，伺服器當前無法處理請求。
+            </summary>
+        </member>
+        <member name="T:Lion.ExAPI.Utility.Hangfire.EnumExtension">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Lion.ExAPI.Utility.Hangfire.EnumExtension.GetDesc(System.Enum)">
+            <summary>
+            <summary>取得列舉 Description 的值</summary>    
+            </summary>
+            <param name="eu"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Lion.ExAPI.Utility.Hangfire.EnumExtension.Get_rCode(System.Enum)">
+            <summary>
+            取得列舉 Rcode 的值
+            </summary>
+            <param name="eu"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Lion.ExAPI.Utility.Hangfire.EnumExtension.Get_rCodeDesc(System.Enum)">
+            <summary>
+            <summary>取得列舉 Description 的值</summary>   
+            </summary>
+            <param name="eu"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Lion.ExAPI.Utility.Hangfire.rCode">
+            <summary>Enum自定參數：rCode</summary>
+        </member>
+        <member name="P:Lion.ExAPI.Utility.Hangfire.rCode.value">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Lion.ExAPI.Utility.Hangfire.rCode.#ctor(System.String)">
+            <summary>
+            
+            </summary>
+            <param name="value"></param>
+        </member>
+        <member name="T:Lion.ExAPI.Utility.Hangfire.rCodeDesc">
+            <summary>Enum自定參數：rCodeDesc</summary>
+        </member>
+        <member name="P:Lion.ExAPI.Utility.Hangfire.rCodeDesc.value">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Lion.ExAPI.Utility.Hangfire.rCodeDesc.#ctor(System.String)">
+            <summary>
+            
+            </summary>
+            <param name="value"></param>
+        </member>
+        <member name="F:Lion.ExAPI.Utility.Hangfire.rCodeStatusEnumLog.none">
+            <summary>Enum初始值</summary> 
+        </member>
+        <member name="F:Lion.ExAPI.Utility.Hangfire.rCodeStatusEnumLog.rCode_0000">
+            <summary>0000:成功</summary> 
+        </member>
+        <member name="F:Lion.ExAPI.Utility.Hangfire.rCodeStatusEnumLog.rCode_0005">
+            <summary>0005:系統發生錯誤</summary> 
+        </member>
+        <member name="F:Lion.ExAPI.Utility.Hangfire.Core.SettingHelper.Re_quest">
+            <summary>
+            Get Request context save to HttpContext.Item。
+            </summary>
+        </member>
+        <member name="F:Lion.ExAPI.Utility.Hangfire.Core.SettingHelper.Re_ponse">
+            <summary>
+            Get Reponse context save to HttpContext.Item。
+            </summary>
+        </member>
+        <member name="F:Lion.ExAPI.Utility.Hangfire.Core.SettingHelper.Re_quest_Id">
+            <summary>
+            Create Request and Reponse Context Id save to HttpContext.Item。  
+            </summary>
+        </member>
+        <member name="F:Lion.ExAPI.Utility.Hangfire.Core.SettingHelper.App_lication">
+            <summary>
+            Get Application Name save to HttpContext.Item。
+            </summary>
+        </member>
+        <member name="F:Lion.ExAPI.Utility.Hangfire.Core.SettingHelper.Action_Timer">
+            <summary>
+            Get Application Time live save to HttpContext.Item。
+            </summary>
+        </member>
+        <member name="F:Lion.ExAPI.Utility.Hangfire.Core.SettingHelper.ErrorMessage">
+            <summary>
+            Get ErrorMessage context save to HttpContext.Item。
+            </summary>
+        </member>
+        <member name="F:Lion.ExAPI.Utility.Hangfire.Core.SettingHelper.ErrorStackTrace">
+            <summary>
+            Get ErrorStackTrace context save to HttpContext.Item。
+            </summary>
+        </member>
+        <member name="F:Lion.ExAPI.Utility.Hangfire.Core.SettingHelper.InnerException">
+            <summary>
+            Get InnerException context save to HttpContext.Item。
+            </summary>
+        </member>
+        <member name="F:Lion.ExAPI.Utility.Hangfire.Core.SettingHelper.Over_ReponseSizeContext">
+            <summary>
+            json 最大檔案限制
+            </summary>
+        </member>
+        <member name="F:Lion.ExAPI.Utility.Hangfire.Core.SettingHelper.Over_ReponseSize">
+            <summary>
+            json 最大檔案限制
+            </summary>
+        </member>
+        <member name="F:Lion.ExAPI.Utility.Hangfire.Core.SettingHelper.LogAddressUrl">
+            <summary>
+             Log connect url
+            </summary>
+        </member>
+        <member name="F:Lion.ExAPI.Utility.Hangfire.Unit.Log._thisLock">
+            <summary>
+            lock object
+            </summary>
+        </member>
+        <member name="M:Lion.ExAPI.Utility.Hangfire.Unit.Log.ObjectErrorLog(System.String,System.String)">
+            <summary>
+            設定錯誤資訊取得錯誤檔案
+            </summary>
+            <param name="webRootPath">錯誤的頁面名稱</param>
+            <param name="sErrMsg">錯誤訊息</param>
+        </member>
+        <member name="M:Lion.ExAPI.Utility.Hangfire.Unit.Log.HangfireErrorLog(System.String,System.String,System.String)">
+            <summary>
+            設定錯誤資訊取得錯誤檔案
+            </summary>
+            <param name="sErrMsg">錯誤的專案名稱</param>
+            <param name="webRootPath">錯誤的頁面名稱</param>
+            <param name="ex">錯誤訊息</param>
+        </member>
+        <member name="M:Lion.ExAPI.Utility.Hangfire.Unit.Log.SizeErrorLog(System.String,System.String)">
+            <summary>
+            設定錯誤資訊取得錯誤檔案
+            </summary>
+            <param name="sErrMsg">錯誤的專案名稱</param>
+            <param name="webRootPath">錯誤的頁面名稱</param>
+        </member>
+        <member name="M:Lion.ExAPI.Utility.Hangfire.Unit.Log.JsonErrorLog(System.String,System.String)">
+            <summary>
+            設定錯誤資訊取得錯誤檔案
+            </summary>
+            <param name="webRootPath">錯誤的頁面名稱</param>
+            <param name="sErrMsg">錯誤訊息</param>
+        </member>
+        <member name="M:Lion.ExAPI.Utility.Hangfire.Unit.Log.ReponseSizeLog(System.String,System.String,System.String)">
+             <summary>
+             設定錯誤資訊取得錯誤檔案
+             </summary>
+             <param name="webRootPath">錯誤的頁面名稱</param>
+             <param name="sErrMsg">錯誤訊息</param>
+            <param name="guid">錯誤訊息</param>
+        </member>
+    </members>
+</doc>

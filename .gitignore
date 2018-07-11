@@ -1,0 +1,10 @@
+src/Lion.ExAPI.Utility.Hangfire/obj/
+src/Lion.ExAPI.Utility/obj/
+packages/
+.vs/
+samples/WebApplication1/bin/
+samples/WebApplication1/obj/
+samples/WebApplication2/bin/
+samples/WebApplication2/obj/
+src/Lion.ExAPI.Utility.Hangfire/bin/
+src/Lion.ExAPI.Utility/bin/

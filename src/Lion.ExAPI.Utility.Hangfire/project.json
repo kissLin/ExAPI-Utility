@@ -1,0 +1,19 @@
+﻿{
+  "supports": {},
+  "dependencies": {
+    "Microsoft.NETCore.Portable.Compatibility": "1.0.1",
+    "NETStandard.Library": "1.6.1",
+    "Newtonsoft.Json": "10.0.2",
+    "Microsoft.AspNetCore.Http": "1.1.2",
+    "Microsoft.Extensions.Configuration.Json": "1.1.2", //Lion.ExAPI.Utility
+    "Microsoft.Extensions.Logging": "1.1.2", //Lion.ExAPI.Utility
+    "Microsoft.Extensions.Logging.Console": "1.1.2", //Lion.ExAPI.Utility
+    "Microsoft.Extensions.Logging.Debug": "1.1.2", //Lion.ExAPI.Utility
+    "Microsoft.AspNetCore.Hosting": "1.1.2"
+  },
+  "frameworks": {
+    "netstandard1.5": {
+      "imports": "dnxcore50"
+    }
+  }
+}

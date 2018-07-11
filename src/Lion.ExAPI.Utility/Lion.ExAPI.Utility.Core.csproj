@@ -1,0 +1,79 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <MinimumVisualStudioVersion>14.0</MinimumVisualStudioVersion>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{4E4AFF41-95F8-49D2-B582-539FB048FF0E}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Lion.ExAPI.Utility.Core</RootNamespace>
+    <AssemblyName>Lion.ExAPI.Utility</AssemblyName>
+    <DefaultLanguage>zh-TW</DefaultLanguage>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{786C830F-07A1-408B-BD7F-6EE04809D6DB};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <TargetFrameworkVersion>v5.0</TargetFrameworkVersion>
+    <BaseIntermediateOutputPath>obj\netstandard1.5\</BaseIntermediateOutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\netstandard1.5\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DocumentationFile>bin\Debug\netstandard1.5\Lion.ExAPI.Utility.Core.xml</DocumentationFile>
+    <NoWarn>1591</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <OutputPath>bin\Release\netstandard1.5\</OutputPath>
+    <DocumentationFile>bin\Release\netstandard1.5\Lion.ExAPI.Utility.xml</DocumentationFile>
+    <NoWarn>1591</NoWarn>
+  </PropertyGroup>
+  <ItemGroup>
+    <!-- A reference to the entire .NET Framework is automatically included -->
+    <None Include="project.json" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Attributes\APIDeveloperTokenAuthenticationAttribute.cs" />
+    <Compile Include="Attributes\OnlyIntranetAttribute.cs" />
+    <Compile Include="Attributes\TokenAuthenticationAttribute.cs" />
+    <Compile Include="DBList.cs" />
+    <Compile Include="Extensions\HttpContextExtension.cs" />
+    <Compile Include="Helper\CacheHelper.cs" />
+    <Compile Include="Helper\CoreHttpClientHelper.cs" />
+    <Compile Include="Helper\UnitHelper.cs" />
+    <Compile Include="Commons\FunMD5.cs" />
+    <Compile Include="CongfigSetting.cs" />
+    <Compile Include="Extensions\EnumExtension.cs" />
+    <Compile Include="Extensions\IPAddressExtension.cs" />
+    <Compile Include="Extensions\Md5Extension.cs" />
+    <Compile Include="Models\DevToken.cs" />
+    <Compile Include="Models\DevTokenApplyPlace.cs" />
+    <Compile Include="Models\Token.cs" />
+    <Compile Include="Models\TokenApplyPlace.cs" />
+    <Compile Include="Models\ToKenModel.cs" />
+    <Compile Include="Models\V2\ResponseBase.cs" />
+    <Compile Include="Settings\AuthStatus.cs" />
+    <Compile Include="Settings\rCodeStatusEnum.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\Portable\$(TargetFrameworkVersion)\Microsoft.Portable.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

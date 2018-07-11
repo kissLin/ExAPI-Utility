@@ -1,0 +1,15 @@
+{
+  "dependencies": {
+    "Dapper": "1.50.2",
+    "Microsoft.Owin": "3.0.1",
+    "Newtonsoft.Json": "6.0.4",
+    //"Microsoft.AspNet.Mvc": "5.2.3",
+    "Microsoft.AspNet.WebApi": "5.2.3"
+  },
+  "runtimes": {
+    "win": {}
+  },
+  "frameworks": {
+    "net451": {}
+  }
+}

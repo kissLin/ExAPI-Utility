@@ -1,0 +1,16 @@
+﻿{
+  "dependencies": {
+    //"Microsoft.AspNet.WebApi": "5.2.3",
+    //"Microsoft.AspNetCore.Http": "1.1.2",
+    //"Microsoft.AspNetCore.Mvc": "1.0.0-rc2-final",
+    "Microsoft.Owin": "3.0.1",
+    "MongoDB.Driver": "2.4.4",
+    "Microsoft.AspNet.WebApi": "5.2.3",
+  },
+  "runtimes": {
+    "win": {}
+  },
+  "frameworks": {
+    "net451": {}
+  }
+}

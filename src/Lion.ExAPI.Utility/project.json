@@ -1,0 +1,22 @@
+﻿{
+  "supports": {},
+  "dependencies": {
+    "Dapper": "1.50.2",
+    "Microsoft.AspNetCore.Http": "1.1.2",
+    "Microsoft.AspNetCore.Mvc": "1.0.0-rc2-final",
+    "Microsoft.AspNetCore.Mvc.Core": "1.0.0-rc2-final",
+    "Microsoft.Extensions.Caching.Memory": "1.1.2",
+    "Microsoft.Extensions.Configuration": "1.1.2",
+    "Microsoft.Extensions.Configuration.FileExtensions": "1.1.2",
+    "Microsoft.Extensions.Configuration.Json": "1.1.2",
+    "Microsoft.Extensions.Logging": "1.1.2",
+    "Microsoft.Extensions.Logging.Console": "1.1.2",
+    "Microsoft.Extensions.Logging.Debug": "1.1.2",
+    "Microsoft.NETCore.Portable.Compatibility": "1.0.1",
+    "NETStandard.Library": "1.6.1",
+    "System.Collections.Specialized": "4.3.0"
+  },
+  "frameworks": {
+    "netstandard1.5": {}
+  }
+}

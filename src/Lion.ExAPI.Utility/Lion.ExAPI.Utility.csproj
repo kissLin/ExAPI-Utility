@@ -1,0 +1,79 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{42102299-DB32-4B21-A418-B492EB1111B8}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Lion.ExAPI.Utility</RootNamespace>
+    <AssemblyName>Lion.ExAPI.Utility</AssemblyName>
+    <TargetFrameworkVersion>v4.5.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <BaseIntermediateOutputPath>obj\net451\</BaseIntermediateOutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\net451\</OutputPath>
+    <DefineConstants>TRACE;DEBUG;net451</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DocumentationFile>bin\Debug\net451\Lion.ExAPI.Utility.xml</DocumentationFile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE;net451</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <OutputPath>bin\Release\net451\</OutputPath>
+    <DocumentationFile>bin\Release\Lion.ExAPI.Utility.xml</DocumentationFile>
+    <NoWarn>1591</NoWarn>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Runtime.Caching" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Attributes\APIDeveloperNetTokenAuthenticationAttribute.cs" />
+    <Compile Include="Attributes\NetTokenAuthenticationAttribute.cs" />
+    <Compile Include="Commons\FunMD5.cs" />
+    <Compile Include="Commons\XmlHelper.cs" />
+    <Compile Include="CongfigSetting.cs" />
+    <Compile Include="Extensions\EnumExtension.cs" />
+    <Compile Include="Extensions\IPAddressExtension.cs" />
+    <Compile Include="Extensions\Md5Extension.cs" />
+    <Compile Include="Helper\HttpClientHelper.cs" />
+    <Compile Include="Helper\NetCacheHelper.cs" />
+    <Compile Include="Helper\UnitHelper.cs" />
+    <Compile Include="Models\DevToken.cs" />
+    <Compile Include="Models\DevTokenApplyPlace.cs" />
+    <Compile Include="Models\Token.cs" />
+    <Compile Include="Models\TokenApplyPlace.cs" />
+    <Compile Include="Models\ToKenModel.cs" />
+    <Compile Include="Models\V2\ResponseBase.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Settings\AuthStatus.cs" />
+    <Compile Include="Settings\rCodeStatusEnum.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Lion.ExAPI.Utility.project.json" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
